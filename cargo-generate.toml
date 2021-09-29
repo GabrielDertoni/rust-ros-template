@@ -1,0 +1,24 @@
+[template]
+cargo_generate_version = ">=0.9.0"
+
+[hooks]
+pre = ["pre-script.rhai"]
+
+[placeholders.description]
+type = "string"
+prompt = "Description of the package"
+default = "TODO: Description"
+
+[placeholders.license]
+type = "string"
+prompt = "Choose a license"
+choices = ["MIT", "BSD"]
+default = "BSD"
+
+[placeholders.mantainer_email]
+type = "string"
+prompt = "Mantainer email"
+
+[placeholders.mantainer_name]
+type = "string"
+prompt = "Mantainer name"

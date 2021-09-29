@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>{{project-name}}</name>
+  <version>0.0.0</version>
+  <description>{{description}}</description>
+  <maintainer email="{{mantainer_email}}">{{mantainer_name}}</maintainer>
+  <license>{{license}}</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  {% for dependency in dependencies -%}
+  <build_depend>{{ dependency }}</build_depend>
+  {% endfor %}
+  {% for dependency in dependencies -%}
+  <run_depend>{{ dependency }}</run_depend>
+  {% endfor %}
+  <export></export>
+</package>
+
