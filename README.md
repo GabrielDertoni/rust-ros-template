@@ -7,11 +7,10 @@ of cargo generate with support for arrays in variables.
 
 ```
 git clone --single-branch --branch arrays https://github.com/GabrielDertoni/cargo-generate.git
-cd cargo-generate
-cargo install --path .
+cargo install --path cargo-generate
 ```
 
-In order to use the template run in the parent directory here the new project
+In order to use the template run in the parent directory where the new project
 should be created.
 
 ```
